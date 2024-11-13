@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafelife</title>
+    
+</head>
+
+<body>
+
+    <header id="cabecera">
+        <img src="imagen/logo cafe.png" width="247" title="Logotipo de empresa cafe">
+        <h1 class="titcab">Mendi, Visitas por Gipuzkoa</h1>
+    </header>
+    <nav id="menu">
+        <a href="index.html">INICIO</a>
+        <a href="curso.html">RUTAS</a>
+        <a href="contacto.html">CONTACTO</a>
+    </nav>
+    <footer id="footer" >
+        <p><script type="text/javascript" src="https://form.jotform.com/jsform/243164135511346"></script></p>
+    </footer>
+</body>
+
+<body>
+    <title>caras</title>
+    
+    <style type="text/css">
+    #container {
+        background-color:rgb(215, 242, 250);
+        padding: 20px;
+        height: 400px;
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+        
+    .apagada {
+        background-color: red;
+    }
+    
+    .encendida {
+        background-color: green;
+    }
+    
+    </style>
+    </head>
+    
+    <div id="container">        
+        
+      <button onclick="onoff('cara feliz')" id="boton">ON</button>
+        
+      <img id="cara feliz" src="imagen/cara feliz.png" title="cara feliz" name="OFF">
+ 
+       <script>
+           
+            function onoff(iden)
+            {
+                if (document.getElementById('boton').innerHTML=='ON') {
+                //if (imagen2 == 'img/bombilla-off.gif'){
+                    document.getElementById(iden).src="imagen/cara feliz.png";
+                    document.getElementById(iden).name="ON";
+                    document.getElementById(iden).title="cara con café";
+                    document.getElementById('boton').innerHTML="OFF";
+                    document.getElementById('boton').className='encendida'; 
+                
+                } else {
+                    document.getElementById(iden).src="imagen/cara cansada.png";
+                    document.getElementById(iden).name="OFF";
+                    document.getElementById(iden).title="cara sin café";
+                    document.getElementById('boton').innerHTML="ON";
+                    document.getElementById('boton').className='apagada';
+                }
+            }
+        </script>
+    
+<footer><p>&copy; cafelife@gmail.com</p></footer>
+</body>
+</html>
